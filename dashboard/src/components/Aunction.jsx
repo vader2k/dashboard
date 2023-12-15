@@ -145,9 +145,9 @@ const Aunction = () => {
         </div>
       </div>
 
-{/* Top creeator section */}
+    {/* Top creeator section */}
       <div className='px-5 bg-white w-[520px] rounded-[10px]'>
-        <div className='flex justify-between py-5 items-center border-b border-gray-300'>
+        <div className='flex justify-between py-5 items-center border-b border-gray-200'>
           <div className='flex items-center gap-1'>
             <div className='h-[20px] w-[3px] bg-cyan-500 rounded-[5px]'>
               <div className='h-[10px] w-[3px] bg-gray-500 rounded-[5px]'></div>
@@ -162,149 +162,194 @@ const Aunction = () => {
         </div>
         
 
-        <div className='flex items-start justify-between'>
-          <div>
-            <h1 className='py-3 border-b border-gray-300 text-gray-500 font-medium'>Name</h1>
-            <div className='flex items-center gap-3 py-3 border-b border-gray-300'>
-              <img className='w-[40px] rounded-full object-contain' src={amanda} alt="amanda" />
-              <div>
-                <p className='text-[0.89rem] text-gray-700'>Amanda Nanes</p>
-                <span className='text-[0.8rem] text-gray-500'>amandananes@</span>
-              </div>
-              <FaCheckCircle className='text-green-500'/>
+        <div className='flex justify-between items-center text-[0.95rem] text-gray-600 font-medium py-5 border-b border-gray-200'>
+            <div>Name</div>
+            <div className='flex items-center gap-10'>
+              <div>Items Sold</div>
+              <div>Total Value</div>
+              <div>Action</div>
             </div>
-            <div className='flex items-center gap-3 py-3 border-b border-gray-300'>
-              <img className='w-[40px] rounded-full object-contain' src={charles} alt="amanda" />
-              <div>
-                <p className='text-[0.89rem] text-gray-700'>Charles Achilles</p>
-                <span className='text-[0.8rem] text-gray-500'>charlseachilles@</span>
-              </div>
-              <FaCheckCircle className='text-green-500'/>
-            </div>
-            <div className='flex items-center gap-3 py-3 border-b border-gray-300'>
-              <img className='w-[40px] rounded-full object-contain' src={julia} alt="amanda" />
-              <div>
-                <p className='text-[0.89rem] text-gray-700'>Julia Camo</p>
-                <span className='text-[0.8rem] text-gray-500'>juliacamo@</span>
-              </div>
-              <FaCheckCircle className='text-green-500'/>
-            </div>
-            <div className='flex items-center gap-3 py-3 border-b border-gray-300'>
-              <img className='w-[40px] rounded-full object-contain' src={jason} alt="amanda" />
-              <div>
-                <p className='text-[0.89rem] text-gray-700'>Jason Taylor</p>
-                <span className='text-[0.8rem] text-gray-500'>amandananes@</span>
-              </div>
-              <FaCheckCircle className='text-green-500'/>
-            </div>
-            <div className='flex items-center gap-3 py-3 border-b border-gray-300'>
-              <img className='w-[40px] rounded-full object-contain' src={elisha} alt="amanda" />
-              <div>
-                <p className='text-[0.89rem] text-gray-700'>Elisha Sean</p>
-                <span className='text-[0.8rem] text-gray-500'>elishasean@</span>
-              </div>
-              <FaCheckCircle className='text-green-500'/>
-            </div>
-            <div className='flex items-center gap-3 py-3 '>
-              <img className='w-[40px] rounded-full object-contain' src={joseph} alt="amanda" />
-              <div>
-                <p className='text-[0.89rem] text-gray-700'>Joseph Smith</p>
-                <span className='text-[0.8rem] text-gray-500'>josephsmith@</span>
-              </div>
-              <FaCheckCircle className='text-green-500'/>
-            </div>
-          </div>
-
-          <div>
-            <h1 className='py-3 border-b border-gray-300 text-gray-500 font-medium'>Items Sold</h1>
-            <div>
-            <div className='py-3 border-b border-gray-300'>
-              <p className='text-gray-500 text-[0.89rem]'>Total Sold</p>
-              <span>18</span>
-            </div>
-            <div className='py-3 border-b border-gray-300'>
-              <p className='text-gray-500 text-[0.89rem]'>Total Sold</p>
-              <span>126</span>
-            </div>
-            <div className='py-3 border-b border-gray-300'>
-              <p className='text-gray-500 text-[0.89rem]'>Total Sold</p>
-              <span>42</span>
-            </div>
-            <div className='py-3 border-b border-gray-300'>
-              <p className='text-gray-500 text-[0.89rem]'>Total Sold</p>
-              <span>63</span>
-            </div>
-            <div className='py-3 border-b border-gray-300'>
-              <p className='text-gray-500 text-[0.89rem]'>Total Sold</p>
-              <span>59</span>
-            </div>
-            <div className='py-3 '>
-              <p className='text-gray-500 text-[0.89rem]'>Total Sold</p>
-              <span>137</span>
-            </div>
-            </div>
-          </div>
-
-          <div>
-            <h1 className='py-3 border-b border-gray-300 text-gray-500 font-medium'>Total Value</h1>
-            <div className='py-3 border-b border-gray-300'>
-                <p className='text-gray-500 text-[0.89rem]'>Sale Value</p>
-                <span>$1,982</span>
-            </div>
-
-            <div className='py-3 border-b border-gray-300'>
-                <p className='text-gray-500 text-[0.89rem]'>Sale Value</p>
-                <span>$16,982</span>
-            </div>
-
-            <div className='py-3 border-b border-gray-300'>
-                <p className='text-gray-500 text-[0.89rem]'>Sale Value</p>
-                <span>$3,432</span>
-            </div>
-
-            <div className='py-3 border-b border-gray-300'>
-                <p className='text-gray-500 text-[0.89rem]'>Sale Value</p>
-                <span>$9,236</span>
-            </div>
-
-            <div className='py-3 border-b border-gray-300'>
-                <p className='text-gray-500 text-[0.89rem]'>Sale Value</p>
-                <span>$7,783</span>
-            </div>
-
-            <div className='py-3'>
-                <p className='text-gray-500 text-[0.89rem]'>Sale Value</p>
-                <span>$13,652</span>
-            </div>
-          </div>
-
-          <div>
-            <h1 className='py-3 border-b border-gray-300 text-gray-500 font-medium'>Action</h1>
-            <div className='py-3'>
-                <button className='text-white bg-purple-500 py-2 px-5 rounded-[5px] outline-none text-[0.8rem]'>Follow</button>
-            </div>
-
-            <div className='py-3 '>
-                <button className='text-purple-600 bg-purple-100 py-2 px-5 rounded-[5px] outline-none text-[0.8rem] mt-4'>Unfollow</button>
-            </div>
-
-            <div className='py-3'>
-                <button className='text-white bg-purple-500 p-3 py-2 rounded-[5px] outline-none text-[0.8rem] mt-4'>Follow</button>
-            </div>
-
-            <div className='py-3'>
-                <button className='text-white bg-purple-500 p-3 py-2 rounded-[5px] outline-none text-[0.8rem] mt-3'>Follow</button>
-            </div>
-
-            <div className='py-3 '>
-                <button className='text-white bg-purple-500 py-2 px-5 rounded-[5px] outline-none text-[0.8rem] mt-3'>Follow</button>
-            </div>
-
-            <div className='py-3'>
-                <button className='text-purple-600 bg-purple-100 py-2 px-5 rounded-[5px] outline-none text-[0.8rem] mt-'>Unfollow</button>
-            </div>
-          </div>
         </div>
+        {/* card details */}
+        {/* Amanda */}
+        <div className='flex items-center justify-between py-3 border-b border-gray-200'>
+          {/* contains only name and picture */}
+            <div className='flex items-center gap-3'>
+              <img className='w-[40px] rounded-full' src={amanda} alt="amanda"/>
+              <div>
+                <div className='flex items-center gap-3'>
+                  <p className='text-[0.89rem] font-medium'>Amanda Nanes</p> <FaCheckCircle className='w-[10px] text-green-500'/>
+                </div>
+                <p className='text-[0.8rem] text-gray-600'>amandananes@</p>
+              </div>
+            </div>
+
+            <div className='flex items-center justify-between gap-10'>
+              <div>
+                <p className='text-[0.89rem] text-gray-500'>Total Sold</p>
+                <p className='text-[0.9rem]'>18</p>
+              </div>
+
+              <div>
+                <p className='text-[0.89rem] text-gray-500'>Sale Value</p>
+                <p className='text-[0.9rem]'>$1,982</p>
+              </div>
+
+              <div>
+                <button className='p-2 text-[0.8rem] bg-purple-600 text-white font-medium rounded-[5px]'>Follow</button>
+              </div>
+            </div>
+          </div>
+
+          {/* Charles */}
+          <div className='flex items-center justify-between py-3 border-b border-gray-200'>
+          {/* contains only name and picture */}
+            <div className='flex items-center gap-3'>
+              <img className='w-[40px] rounded-full' src={charles} alt="amanda"/>
+              <div>
+                <div className='flex items-center gap-3'>
+                  <p className='text-[0.89rem] font-medium'>Charles Achilles</p> <FaCheckCircle className='w-[10px] text-green-500'/>
+                </div>
+                <p className='text-[0.8rem] text-gray-600'>charlesachilles@</p>
+              </div>
+            </div>
+
+            <div className='flex items-center justify-between gap-8'>
+              <div>
+                <p className='text-[0.89rem] text-gray-500'>Total Sold</p>
+                <p className='text-[0.9rem]'>126</p>
+              </div>
+
+              <div>
+                <p className='text-[0.89rem] text-gray-500'>Sale Value</p>
+                <p className='text-[0.9rem]'>$16,982</p>
+              </div>
+
+              <div>
+                <button className='p-2 text-[0.8rem] bg-purple-200 text-purple-600 font-medium rounded-[5px]'>Unfollow</button>
+              </div>
+            </div>
+          </div>
+
+          {/* JULIA */}
+          <div className='flex items-center justify-between py-3 border-b border-gray-200'>
+          {/* contains only name and picture */}
+            <div className='flex items-center gap-3'>
+              <img className='w-[40px] rounded-full' src={julia} alt="amanda"/>
+              <div>
+                <div className='flex items-center gap-3'>
+                  <p className='text-[0.89rem] font-medium'>Julia Camo</p> <FaCheckCircle className='w-[10px] text-green-500'/>
+                </div>
+                <p className='text-[0.8rem] text-gray-600'>juliacamo@</p>
+              </div>
+            </div>
+
+            <div className='flex items-center justify-between gap-10'>
+              <div>
+                <p className='text-[0.89rem] text-gray-500'>Total Sold</p>
+                <p className='text-[0.9rem]'>42</p>
+              </div>
+
+              <div>
+                <p className='text-[0.89rem] text-gray-500'>Sale Value</p>
+                <p className='text-[0.9rem]'>$3,432</p>
+              </div>
+
+              <div>
+                <button className='p-2 text-[0.8rem] bg-purple-600 text-white font-medium rounded-[5px]'>follow</button>
+              </div>
+            </div>
+          </div>
+
+          {/* Json */}
+          <div className='flex items-center justify-between py-3 border-b border-gray-200'>
+          {/* contains only name and picture */}
+            <div className='flex items-center gap-3'>
+              <img className='w-[40px] rounded-full' src={jason} alt="amanda"/>
+              <div>
+                <div className='flex items-center gap-3'>
+                  <p className='text-[0.89rem] font-medium'>Json Taylor</p> <FaCheckCircle className='w-[10px] text-green-500'/>
+                </div>
+                <p className='text-[0.8rem] text-gray-600'>jsontaylor@</p>
+              </div>
+            </div>
+
+            <div className='flex items-center justify-between gap-10'>
+              <div>
+                <p className='text-[0.89rem] text-gray-500'>Total Sold</p>
+                <p className='text-[0.9rem]'>63</p>
+              </div>
+
+              <div>
+                <p className='text-[0.89rem] text-gray-500'>Sale Value</p>
+                <p className='text-[0.9rem]'>$9,236</p>
+              </div>
+
+              <div>
+                <button className='p-2 text-[0.8rem] bg-purple-600 text-white font-medium rounded-[5px]'>follow</button>
+              </div>
+            </div>
+          </div>
+
+          {/* Elisha sean */}
+          <div className='flex items-center justify-between py-3 border-b border-gray-200'>
+          {/* contains only name and picture */}
+            <div className='flex items-center gap-3'>
+              <img className='w-[40px] rounded-full' src={elisha} alt="amanda"/>
+              <div>
+                <div className='flex items-center gap-3'>
+                  <p className='text-[0.89rem] font-medium'>Elisha Sean</p> <FaCheckCircle className='w-[10px] text-green-500'/>
+                </div>
+                <p className='text-[0.8rem] text-gray-600'>elishasean@</p>
+              </div>
+            </div>
+
+            <div className='flex items-center justify-between gap-10'>
+              <div>
+                <p className='text-[0.89rem] text-gray-500'>Total Sold</p>
+                <p className='text-[0.9rem]'>59</p>
+              </div>
+
+              <div>
+                <p className='text-[0.89rem] text-gray-500'>Sale Value</p>
+                <p className='text-[0.9rem]'>$7,786</p>
+              </div>
+
+              <div>
+                <button className='p-2 text-[0.8rem] bg-purple-600 text-white font-medium rounded-[5px]'>follow</button>
+              </div>
+            </div>
+          </div>
+
+          {/* joseph */}
+          <div className='flex items-center justify-between py-5 border-b border-gray-200'>
+          {/* contains only name and picture */}
+            <div className='flex items-center gap-3'>
+              <img className='w-[40px] rounded-full' src={joseph} alt="amanda"/>
+              <div>
+                <div className='flex items-center gap-3'>
+                  <p className='text-[0.89rem] font-medium'>Joseph Smith</p> <FaCheckCircle className='w-[10px] text-green-500'/>
+                </div>
+                <p className='text-[0.8rem] text-gray-600'>josephsmith@</p>
+              </div>
+            </div>
+
+            <div className='flex items-center justify-between gap-8'>
+              <div>
+                <p className='text-[0.89rem] text-gray-500'>Total Sold</p>
+                <p className='text-[0.9rem]'>137</p>
+              </div>
+
+              <div>
+                <p className='text-[0.89rem] text-gray-500'>Sale Value</p>
+                <p className='text-[0.9rem]'>$3,562</p>
+              </div>
+
+              <div>
+                <button className='p-2 text-[0.8rem] bg-purple-200 text-purple-600 font-medium rounded-[5px]'>Unfollow</button>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   )
