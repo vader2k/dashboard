@@ -322,7 +322,7 @@ const Aunction = () => {
           </div>
 
           {/* joseph */}
-          <div className='flex items-center justify-between py-5 border-b border-gray-200'>
+          <div className='flex items-center justify-between py-3 border-b border-gray-200'>
           {/* contains only name and picture */}
             <div className='flex items-center gap-3'>
               <img className='w-[40px] rounded-full' src={joseph} alt="amanda"/>
