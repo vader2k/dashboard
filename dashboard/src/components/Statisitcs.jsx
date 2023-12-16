@@ -9,16 +9,48 @@ import agire from '../assets/14.jpg'
 
 // statistics image
 import chart from '../assets/graph.png'
-
+// ethereumm
 import { FaEthereum } from "react-icons/fa";
 
+// carousel images
+import skull from '../assets/6.png'
+import lights from '../assets/7.png'
+import lighthouse from '../assets/8.png'
+import orange from '../assets/9.png'
+import tubes from '../assets/10.png'
+import savana from '../assets/11.png'
+import tree from '../assets/12.png'
+import beach from '../assets/13.png'
+import cloud from '../assets/14.png'
+import shapes from '../assets/15.png'
+import green from '../assets/16.png'
+import pink from '../assets/17.png'
+
+import { useState, useEffect } from 'react';
+import ReactSimplyCarousel from 'react-simply-carousel';
+
 const Statisitcs = () => {
+
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     // Increment the active slide index
+  //     setActiveSlideIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+  //   }, 3000); // Adjust the interval as needed (in milliseconds)
+
+  //   return () => clearInterval(interval); // Clear the interval on component unmount
+  // }, [activeSlideIndex]);
+
+  // const totalSlides = 3; // Replace with the total number of slides
+
+
   return (
-    <div className='flex items-center text-[1rem] px-5 bg-gray-100'>
+    <div className='flex gap-5 items-center text-[1rem] px-5 bg-gray-100 '>
 
       {/* top collectors */}
 
-      <div className='flex-1 bg-white p-5 rounded-[8px]'>
+      <div className='flex-[2] bg-white p-5 rounded-[8px]'>
         <div className='flex items-center justify-between py-3 border-b border-gray-200'>
           <div className='flex items-center gap-2'>
             <div className='h-[15px] bg-cyan-200 w-[3px] rounded-[5px]'>
@@ -139,8 +171,8 @@ const Statisitcs = () => {
       </div>
 
       {/* NFT STATISTICS */}
-      <div className='flex-[3]'>
-      <div className='flex items-center justify-between py-3 border-b border-gray-200 p-5'>
+      <div className='flex-[3] bg-white rounded-[5px]'>
+      <div className='flex items-center justify-between py-5 border-b border-gray-200 p-5'>
           <div className='flex items-center gap-2'>
             <div className='h-[15px] bg-cyan-200 w-[3px] rounded-[5px]'>
               <div className='h-[40%] w-full bg-gray-300'></div>
@@ -158,33 +190,89 @@ const Statisitcs = () => {
         </div>
 
         {/* content */}
+        <div className='flex justify-between px-10 items-center py-5'>
+          <div className='bg-gray-200 p-2 rounded-full'>
+            <FaEthereum className='text-gray-500 text-[1.5rem]'/>
+          </div>
+          <div>
+            <p className='text-[0.85rem] text-gray-400'>Symbol</p>
+            <p className='text-[0.95rem] font-medium'>ETH</p>
+          </div>
+          <div>
+            <p className='text-[0.85rem] text-gray-400'>Price Benchmark</p>
+            <p className='text-[0.95rem] font-medium'>-0.39%</p>
+          </div>
+          <div>
+            <p className='text-[0.85rem] text-gray-400'>Price (USD)</p>
+            <p className='text-[0.95rem] font-medium text-green-400'>$1,212.67</p>
+          </div>
+          <div>
+            <p className='text-[0.85rem] text-gray-400'>Change (24H)</p>
+            <p className='text-[0.95rem] font-medium text-red-600'>-0.14$</p>
+          </div>
+          <div>
+            <p className='text-[0.85rem] text-gray-400'>Market Cap</p>
+            <p className='text-[0.95rem] font-medium'>$148.20B</p>
+          </div>
+        </div>
+
+
+        <div className='py-3'>
+          <img src={chart} alt="charts" />
+        </div>
+      </div>
+
+      {/* FEATURED COLLECTION */}
+      <div className='flex-[1]'>
         <div>
-          <div>
-            <FaEthereum/>
+          <div className='flex items-center justify-between py-5'>
+            <p className='font-medium'>Featured Collections :</p>
+            <button className=' p-2 text-[0.85rem] text-purple-700 bg-purple-200 rounded-[5px]'>View All</button>
           </div>
+        </div>
+
+        <div className='w-[400px] overflow-x-auto bg-white p-5'>
           <div>
-            <p>Symbol</p>
-            <p>ETH</p>
-          </div>
-          <div>
-            <p>Price Benchmark</p>
-            <p>-0.39%</p>
-          </div>
-          <div>
-            <p>Price (USD)</p>
-            <p>$1,212.67</p>
-          </div>
-          <div>
-            <p>Symbol</p>
-            <p>ETH</p>
-          </div>
-          <div>
-            <p>Symbol</p>
-            <p>ETH</p>
+            <ReactSimplyCarousel
+              activeSlideIndex={activeSlideIndex}
+              onRequestChange={setActiveSlideIndex}
+              itemsToShow={1}
+              itemsToScroll={1}
+              responsiveProps={[
+                {
+                  itemsToShow: 1,
+                  itemsToScroll: 1,
+                  minWidth: 768,
+                },
+              ]}
+              speed={100}
+              easing="linear"
+            >
+              {/* here you can also pass any other element attributes. Also, you can use your custom components as slides */}
+              <div className='w-[400px] h-[350px]'>
+                <div className='flex flex-col gap-3 pb-7'>
+                  <div className='flex gap-3'>
+                    <img className='w-[180px] h-[150px] object-cover rounded-[10px]' src={skull} alt="skull" />
+                    <img className='w-[180px] h-[150px] object-cover rounded-[10px]' src={lights} alt="orange" />
+                  </div>
+                  <div className='flex gap-3'>
+                    <img className='w-[180px] h-[150px] object-cover rounded-[10px]' src={lighthouse} alt="lighthouse" />
+                    <img className='w-[180px] h-[150px] object-cover rounded-[10px]' src={orange} alt="lighthouse" />
+                  </div>
+                </div>
+                <hr className='w-[900px]'/>
+                
+              </div>
+              <div className='w-[400px] h-[350px]'>
+                slide 1
+              </div>
+              <div className='w-[400px] h-[350px]'>
+                slide 2
+              </div>
+            </ReactSimplyCarousel>
           </div>
         </div>
       </div>
-      
     </div>
   )
 }
