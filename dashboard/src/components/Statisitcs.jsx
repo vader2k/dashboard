@@ -6,11 +6,16 @@ import jessica from '../assets/3.jpg'
 import json from '../assets/11.jpg'
 import kiara from '../assets/2.jpg'
 import agire from '../assets/14.jpg'
+import taylor from '../assets/10.jpg'
+import simon from '../assets/15.jpg'
 
 // statistics image
 import chart from '../assets/graph.png'
 // ethereumm
 import { FaEthereum } from "react-icons/fa";
+
+// dots
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 // carousel images
 import skull from '../assets/6.png'
@@ -33,16 +38,16 @@ const Statisitcs = () => {
 
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     // Increment the active slide index
-  //     setActiveSlideIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-  //   }, 3000); // Adjust the interval as needed (in milliseconds)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Increment the active slide index
+      setActiveSlideIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+    }, 3000); // Adjust the interval as needed (in milliseconds)
 
-  //   return () => clearInterval(interval); // Clear the interval on component unmount
-  // }, [activeSlideIndex]);
+    return () => clearInterval(interval); // Clear the interval on component unmount
+  }, [activeSlideIndex]);
 
-  // const totalSlides = 3; // Replace with the total number of slides
+  const totalSlides = 3; // Replace with the total number of slides
 
 
   return (
@@ -225,13 +230,13 @@ const Statisitcs = () => {
       {/* FEATURED COLLECTION */}
       <div className='flex-[1]'>
         <div>
-          <div className='flex items-center justify-between py-5'>
+          <div className='flex items-center justify-between pb-3'>
             <p className='font-medium'>Featured Collections :</p>
-            <button className=' p-2 text-[0.85rem] text-purple-700 bg-purple-200 rounded-[5px]'>View All</button>
+            <button className=' px-2 text-[0.8rem] text-purple-700 bg-purple-200 rounded-[5px]'>View All</button>
           </div>
         </div>
 
-        <div className='w-[400px] overflow-x-auto bg-white p-5'>
+        <div className=' bg-white p-5'>
           <div>
             <ReactSimplyCarousel
               activeSlideIndex={activeSlideIndex}
@@ -249,25 +254,116 @@ const Statisitcs = () => {
               easing="linear"
             >
               {/* here you can also pass any other element attributes. Also, you can use your custom components as slides */}
-              <div className='w-[400px] h-[350px]'>
+              <div className='w-[400px]'>
                 <div className='flex flex-col gap-3 pb-7'>
                   <div className='flex gap-3'>
-                    <img className='w-[180px] h-[150px] object-cover rounded-[10px]' src={skull} alt="skull" />
-                    <img className='w-[180px] h-[150px] object-cover rounded-[10px]' src={lights} alt="orange" />
+                    <img className='w-[200px] h-[150px] object-cover rounded-[10px]' src={skull} alt="skull" />
+                    <img className='w-[200px] h-[150px] object-cover rounded-[10px]' src={lights} alt="orange" />
                   </div>
                   <div className='flex gap-3'>
-                    <img className='w-[180px] h-[150px] object-cover rounded-[10px]' src={lighthouse} alt="lighthouse" />
-                    <img className='w-[180px] h-[150px] object-cover rounded-[10px]' src={orange} alt="lighthouse" />
+                    <img className='w-[200px] h-[150px] object-cover rounded-[10px]' src={lighthouse} alt="lighthouse" />
+                    <img className='w-[200px] h-[150px] object-cover rounded-[10px]' src={orange} alt="lighthouse" />
                   </div>
                 </div>
-                <hr className='w-[900px]'/>
-                
+                <hr />
+                <div className='flex items-center justify-between py-3 '>
+                  <div className='flex items-center gap-3'>
+                    <p className='text-[0.8rem] text-gray-400'>Collection Rank :</p> <p className='text-green-400 font-bold'>#1</p>
+                  </div>
+                  <div className='flex items-center gap-2'>
+                    <div className='p-2 bg-gray-100 rounded-full'><FaEthereum className='text-gray-400'/></div>
+                    <div className='text-[0.89rem] text-gray-500 font-bold'>1.0979ETH</div>
+                  </div>
+                </div>
+                <hr />
+                <div className='pt-5 flex items-center justify-between'>
+                  <div className='flex items-center gap-3'>
+                    <div>
+                      <img className='w-[40px] rounded-full' src={simon} alt="jason" />
+                    </div>
+                    <div>
+                      <p className='text-[0.8rem] font-bold text-gray-600'>Simon Cowell</p>
+                      <span className='text-[0.75rem] text-gray-600'>@simon</span>
+                    </div>
+                  </div>
+                  <div>
+                    <BsThreeDotsVertical/>
+                  </div>
+                </div>
               </div>
-              <div className='w-[400px] h-[350px]'>
-                slide 1
+              <div className='w-[400px]'>
+                <div className='flex flex-col gap-3 pb-7'>
+                    <div className='flex gap-3'>
+                      <img className='w-[200px] h-[150px] object-cover rounded-[10px]' src={savana} alt="skull" />
+                      <img className='w-[200px] h-[150px] object-cover rounded-[10px]' src={tree} alt="orange" />
+                    </div>
+                    <div className='flex gap-3'>
+                      <img className='w-[200px] h-[150px] object-cover rounded-[10px]' src={beach} alt="lighthouse" />
+                      <img className='w-[200px] h-[150px] object-cover rounded-[10px]' src={cloud} alt="lighthouse" />
+                    </div>
+                  </div>
+                  <hr />
+                  <div className='flex items-center justify-between py-3 '>
+                    <div className='flex items-center gap-3'>
+                      <p className='text-[0.8rem] text-gray-400'>Collection Rank :</p> <p className='text-green-400 font-bold'>#2</p>
+                    </div>
+                    <div className='flex items-center gap-2'>
+                      <div className='p-2 bg-gray-100 rounded-full'><FaEthereum className='text-gray-400'/></div>
+                      <div className='text-[0.89rem] text-gray-500 font-bold'>1.0466ETH</div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div className='pt-5 flex items-center justify-between'>
+                    <div className='flex items-center gap-3'>
+                      <div>
+                        <img className='w-[40px] rounded-full' src={alicai} alt="jason" />
+                      </div>
+                      <div>
+                        <p className='text-[0.8rem] font-bold text-gray-600'>Melisa Smith</p>
+                        <span className='text-[0.75rem] text-gray-600'>@melisa</span>
+                      </div>
+                    </div>
+                    <div>
+                      <BsThreeDotsVertical/>
+                    </div>
+                  </div>
               </div>
-              <div className='w-[400px] h-[350px]'>
-                slide 2
+              <div className='w-[400px]'>
+                <div className='flex flex-col gap-3 pb-7'>
+                      <div className='flex gap-3'>
+                        <img className='w-[200px] h-[150px] object-cover rounded-[10px]' src={tubes} alt="skull" />
+                        <img className='w-[200px] h-[150px] object-cover rounded-[10px]' src={shapes} alt="orange" />
+                      </div>
+                      <div className='flex gap-3'>
+                        <img className='w-[200px] h-[150px] object-cover rounded-[10px]' src={pink} alt="lighthouse" />
+                        <img className='w-[200px] h-[150px] object-cover rounded-[10px]' src={green} alt="lighthouse" />
+                      </div>
+                    </div>
+                    <hr />
+                    <div className='flex items-center justify-between py-3 '>
+                      <div className='flex items-center gap-3'>
+                        <p className='text-[0.8rem] text-gray-400'>Collection Rank :</p> <p className='text-green-400 font-bold'>#3</p>
+                      </div>
+                      <div className='flex items-center gap-2'>
+                        <div className='p-2 bg-gray-100 rounded-full'><FaEthereum className='text-gray-400'/></div>
+                        <div className='text-[0.89rem] text-gray-500 font-bold'>1.0156ETH</div>
+                      </div>
+                    </div>
+                    <hr />
+                    <div className='pt-5 flex items-center justify-between'>
+                      <div className='flex items-center gap-3'>
+                        <div>
+                          <img className='w-[40px] rounded-full' src={taylor} alt="jason" />
+                        </div>
+                        <div>
+                          <p className='text-[0.8rem] font-bold text-gray-600'>Json Taylor</p>
+                          <span className='text-[0.75rem] text-gray-600'>@json</span>
+                        </div>
+                      </div>
+                      <div>
+                        <BsThreeDotsVertical/>
+                      </div>
+                  </div>
               </div>
             </ReactSimplyCarousel>
           </div>
