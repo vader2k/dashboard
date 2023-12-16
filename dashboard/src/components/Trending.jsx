@@ -1,9 +1,17 @@
-import React from 'react'
 
 const Trending = () => {
   return (
     <div>
-      
+      <div>
+        {/* TRENDING   NFTS */}
+        <div>
+          
+        </div>
+
+
+        {/* PERSONAL LISTINGS */}
+        <div></div>
+      </div>
     </div>
   )
 }
