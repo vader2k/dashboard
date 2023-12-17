@@ -66,8 +66,8 @@ const Hero = () => {
                 <div className="bg-yellow-400 text-white text-[2.5rem] p-2 rounded-[10px]"><CiDollar/></div>
                 <div className="flex flex-col gap-1">
                   <p className="text-[0.9rem] text-gray-500">Total Revenue</p>
-                  <span className="text-[1.5rem] font-medium">$7,63,129.09</span>
-                  <div className="flex items-center gap-3 text-[0.8rem]"><span className="flex items-center gap-1 text-red-500"><p>0.125%</p> <IoMdArrowDropdown/></span><p className="font-normal text-gray-500">This month</p></div>
+                  <span className="text-[1.5rem] font-medium">$7,63,12.09</span>
+                  <div className="flex items-center gap-2 text-[0.8rem]"><span className="flex items-center gap-1 text-red-500"><p>0.125%</p> <IoMdArrowDropdown/></span><p className="font-normal text-gray-500">This month</p></div>
                 </div>
               </div>
             </div>
