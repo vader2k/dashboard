@@ -96,7 +96,7 @@ const Aunction = () => {
                     {/* contains only the nft images and positon absolute items, such as likes and timers */}
                     <img className='w-[250px] object-contain' src={items.img} alt="nft images" />
                     <div className='flex flex-col gap-2 absolute top-5'>
-                      <div className='flex items-center justify-between px-5'>
+                      <div className='flex justify-between px-5'>
                         <div className='text-[0.9rem] p-2 rounded-full bg-green-500 text-white'>
                           {items.heart}
                         </div>
@@ -113,8 +113,8 @@ const Aunction = () => {
                     </div>
                   </div>
                   {/* contains items after the image div insdie the container */}
-                  <div className='flex flex-col items-center py-6 gap-2'>
-                    <div className='flex items-center gap-4  justify-center'>
+                  <div className='flex flex-col  p-6 gap-2'>
+                    <div className='flex items-center gap-4 '>
                       <img className='w-[50px] rounded-full' src={items.profilePic} alt="profile pic" />
                       <div className='flex flex-col'>
                         <div className='font-medium text-[0.9rem]'>
@@ -129,11 +129,11 @@ const Aunction = () => {
                       {items.title}
                     </div>
                     <div className='text-[0.8rem] flex items-center gap-1 py-1'>
-                      <div className='flex gap-1'>
-                        <div className='font-bold text-gray-600'>
+                      <div className='flex justify-between gap-10'>
+                        <div className='font-bold text-[0.9rem] text-gray-600'>
                           Highest Bid
                         </div>
-                        {items.bid}
+                        <div>{items.bid}</div>
                       </div>
                       <FaEthereum className='text-yellow-500'/>
                     </div>

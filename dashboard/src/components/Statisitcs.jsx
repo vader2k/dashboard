@@ -51,7 +51,7 @@ const Statisitcs = () => {
 
 
   return (
-    <div className='flex gap-5 items-center text-[1rem] px-5 bg-gray-100 '>
+    <div className='flex gap-5 items-end text-[1rem] px-5 bg-gray-100 '>
 
       {/* top collectors */}
 
@@ -68,13 +68,13 @@ const Statisitcs = () => {
 
         <div>
           {/* Alicia */}
-          <div className='flex items-center justify-between  py-3 border-b border-gray-200'>
+          <div className='flex items-center justify-between  py-3 border-b border-gray- hover:bg-gray-100'>
             <div className='flex items-center gap-3'>
               <img className='w-[30px] rounded-full object-contain' src={alicai} alt="alicia" />
               <p className='text-[0.9rem] font-medium'>Alicia Smith</p>
             </div>
             <div className='w-[50px] h-[5px] bg-gray-200 rounded-[5px]'>
-              <div className='w-[75%] h-full bg-purple-950'></div>
+              <div className='w-[75%] h-full bg-purple-700'></div>
             </div>
             <div className='text-[0.89rem] text-gray-500'>75%</div>
             <div>
@@ -83,13 +83,13 @@ const Statisitcs = () => {
             </div>
           </div>
           {/* Alex */}
-          <div className='flex items-center justify-between  py-3 border-b border-gray-200'>
+          <div className='flex items-center justify-between  py-3 border-b border-gray-200 hover:bg-gray-100'>
             <div className='flex items-center gap-3'>
               <img className='w-[30px] rounded-full object-contain' src={alex} alt="alicia" />
               <p className='text-[0.9rem] font-medium'>Alex Carey</p>
             </div>
             <div className='w-[50px] h-[5px] bg-gray-200 rounded-[5px]'>
-              <div className='w-[60%] h-full bg-purple-950'></div>
+              <div className='w-[60%] h-full bg-purple-700'></div>
             </div>
             <div className='text-[0.89rem] text-gray-500'>60%</div>
             <div>
@@ -98,13 +98,13 @@ const Statisitcs = () => {
             </div>
           </div>
           {/* Emiley */}
-          <div className='flex items-center justify-between py-3 border-b border-gray-200'>
+          <div className='flex items-center justify-between py-3 border-b border-gray-200 hover:bg-gray-100'>
             <div className='flex items-center gap-3'>
               <img className='w-[30px] rounded-full object-contain' src={emiley} alt="alicia" />
               <p className='text-[0.9rem] font-medium'>Emiley Jack</p>
             </div>
             <div className='w-[50px] h-[5px] bg-gray-200 rounded-[5px]'>
-              <div className='w-[35%] h-full bg-purple-950'></div>
+              <div className='w-[35%] h-full bg-purple-700'></div>
             </div>
             <div className='text-[0.89rem] text-gray-500'>35%</div>
             <div>
@@ -113,13 +113,13 @@ const Statisitcs = () => {
             </div>
           </div>
           {/* JESSICA */}
-          <div className='flex items-center justify-between py-3 border-b border-gray-200'>
+          <div className='flex items-center justify-between py-3 border-b border-gray-200 hover:bg-gray-100'>
             <div className='flex items-center gap-3'>
               <img className='w-[30px] rounded-full object-contain' src={jessica} alt="alicia" />
               <p className='text-[0.9rem] font-medium'>Jessica</p>
             </div>
             <div className='w-[50px] h-[5px] bg-gray-200 rounded-[5px]'>
-              <div className='w-[70%] h-full bg-purple-950'></div>
+              <div className='w-[70%] h-full bg-purple-700'></div>
             </div>
             <div className='text-[0.89rem] text-gray-500'>70%</div>
             <div>
@@ -128,13 +128,13 @@ const Statisitcs = () => {
             </div>
           </div>
           {/* Json  */}
-          <div className='flex items-center justify-between py-3 border-b border-gray-200'>
+          <div className='flex items-center justify-between py-3 border-b border-gray-200 hover:bg-gray-100'>
             <div className='flex items-center gap-3'>
               <img className='w-[30px] rounded-full object-contain' src={json} alt="alicia" />
               <p className='text-[0.9rem] font-medium'>Json Taylor</p>
             </div>
             <div className='w-[50px] h-[5px] bg-gray-200 rounded-[5px]'>
-              <div className='w-[90%] h-full bg-purple-950'></div>
+              <div className='w-[90%] h-full bg-purple-700'></div>
             </div>
             <div className='text-[0.89rem] text-gray-500'>90%</div>
             <div>
@@ -143,13 +143,13 @@ const Statisitcs = () => {
             </div>
           </div>
           {/* Kiara */}
-          <div className='flex items-center justify-between py-3 border-b border-gray-200'>
+          <div className='flex items-center justify-between py-3 border-b border-gray-200 hover:bg-gray-100'>
             <div className='flex items-center gap-3'>
               <img className='w-[30px] rounded-full object-contain' src={kiara} alt="alicia" />
               <p className='text-[0.9rem] font-medium'>Kiara May</p>
             </div>
             <div className='w-[50px] h-[5px] bg-gray-200 rounded-[5px]'>
-              <div className='w-[62%] h-full bg-purple-950'></div>
+              <div className='w-[62%] h-full bg-purple-700'></div>
             </div>
             <div className='text-[0.89rem] text-gray-500'>62%%</div>
             <div>
@@ -158,13 +158,13 @@ const Statisitcs = () => {
             </div>
           </div>
           {/* agire */}
-          <div className='flex items-center justify-between'>
+          <div className='flex items-center justify-between mt-2 hover:bg-gray-100'>
             <div className='flex items-center gap-3'>
               <img className='w-[30px] rounded-full object-contain' src={agire} alt="alicia" />
               <p className='text-[0.9rem] font-medium'>Agire Khan</p>
             </div>
             <div className='w-[50px] h-[5px] bg-gray-200 rounded-[5px]'>
-              <div className='w-[62%] h-full bg-purple-950'></div>
+              <div className='w-[62%] h-full bg-purple-700'></div>
             </div>
             <div className='text-[0.89rem] text-gray-500'>85%%</div>
             <div>
@@ -176,7 +176,7 @@ const Statisitcs = () => {
       </div>
 
       {/* NFT STATISTICS */}
-      <div className='flex-[3] bg-white rounded-[5px]'>
+      <div className='flex-[3] bg-white rounded-[5px] py-2'>
       <div className='flex items-center justify-between py-5 border-b border-gray-200 p-5'>
           <div className='flex items-center gap-2'>
             <div className='h-[15px] bg-cyan-200 w-[3px] rounded-[5px]'>
